@@ -1,0 +1,657 @@
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> male load
+If 'male' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf male
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'crazySound':
+mainRunner.c:74:1: error: expected declaration or statement at end of input
+ }
+ ^
+mainRunner.c:74:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program>  make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'crazySound':
+mainRunner.c:52:15: error: 'LED_REDo' undeclared (first use in this function); did you mean 'LED_RED'?
+     P1OUT &= ~LED_REDo
+               ^~~~~~~~
+               LED_RED
+mainRunner.c:52:15: note: each undeclared identifier is reported only once for each function it appears in
+mainRunner.c:52:23: error: expected ';' before 'if'
+     P1OUT &= ~LED_REDo
+                       ^
+                       ;
+     if (p1val & SW1) {
+     ~~                 
+mainRunner.c:75:1: error: expected declaration or statement at end of input
+ }
+ ^
+mainRunner.c:75:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'crazySound':
+mainRunner.c:52:15: error: 'LED_REDo' undeclared (first use in this function); did you mean 'LED_RED'?
+     P1OUT &= ~LED_REDo
+               ^~~~~~~~
+               LED_RED
+mainRunner.c:52:15: note: each undeclared identifier is reported only once for each function it appears in
+mainRunner.c:52:23: error: expected ';' before 'if'
+     P1OUT &= ~LED_REDo
+                       ^
+                       ;
+     if (p1val & SW1) {
+     ~~                 
+mainRunner.c:75:1: error: expected declaration or statement at end maof input
+ }
+ ^
+mainRunner.c:75:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'crazySound':
+mainRunner.c:76:1: error: expected declaration or statement at end of input
+ }
+ ^
+mainRunner.c:76:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> mainRunner.c:75:1: error: expected declaration or statement at end maof input
+ }
+ ^
+mainRunner.c:75:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+If 'mainRunner.c:75:1:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:75:1:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `}'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:75:1:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:75:1:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: builtin: No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'lightsForCrazySound':
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+   }
+   ^
+mainRunner.c: In function 'crazySound':
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make laod
+make: *** No rule to make target 'laod'.  Stop.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'lightsForCrazySound':
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+   }
+   ^
+mainRunner.c: In function 'crazySound':
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+mainRunner.c:75:3: error: expected declaration or statement at end of input
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:54:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'lightsForCrazySound':
+mainRunner.c:68:3: error: expected declaration or statement at end of input
+   }
+   ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:54:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+No valid msp430 devices found! Are you sure the MSP430 is connected to the vm (check lsusb)? 
+make: *** [Makefile:18: load] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 728 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:59:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+mainRunner.c:61:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: In function 'crazySound':
+mainRunner.c:75:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:60:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 776 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:60:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 776 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:60:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 758 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:68:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 788 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:68:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 816 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:34:5: warning: implicit declaration of function 'lightsForCrazySound' [-Wimplicit-function-declaration]
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:67:6: warning: conflicting types for 'lightsForCrazySound'
+ void lightsForCrazySound(){
+      ^~~~~~~~~~~~~~~~~~~
+mainRunner.c:34:5: note: previous implicit declaration of 'lightsForCrazySound' was here
+     lightsForCrazySound();
+     ^~~~~~~~~~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 806 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:33:5: warning: implicit declaration of function 'firstBotton' [-Wimplicit-function-declaration]
+     firstBotton();
+     ^~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:35:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:33:5: warning: implicit declaration of function 'firstBotton' [-Wimplicit-function-declaration]
+     firstBotton();
+     ^~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:35:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){mm
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:33:5: warning: implicit declaration of function 'firstBotton' [-Wimplicit-function-declaration]
+     firstBotton();
+     ^~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:35:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program>  void initialState(){mm
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:33:5: warning: implicit declaration of function 'firstBotton' [-Wimplicit-function-declaration]
+     firstBotton();
+     ^~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:35:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+bash: syntax error near unexpected token `('
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^~~~~~~~~~~~' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^~~~~~~~~~~~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:27:4:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:27:4:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `;'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^~~~~~~~~~~~' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^~~~~~~~~~~~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:33:5:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:33:5:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `;'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^~~~~~~~~~~' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^~~~~~~~~~~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'mainRunner.c:35:1:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf mainRunner.c:35:1:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `}'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: builtin: No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c: In function 'main':
+mainRunner.c:27:4: warning: implicit declaration of function 'initialState' [-Wimplicit-function-declaration]
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: At top level:
+mainRunner.c:31:6: warning: conflicting types for 'initialState'
+ void initialState(){
+      ^~~~~~~~~~~~
+mainRunner.c:27:4: note: previous implicit declaration of 'initialState' was here
+    initialState();
+    ^~~~~~~~~~~~
+mainRunner.c: In function 'initialState':
+mainRunner.c:32:4: warning: implicit declaration of function 'firstBotton' [-Wimplicit-function-declaration]
+    firstBotton();
+    ^~~~~~~~~~~
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o ../lib/libTimer.a
+mainRunner.o: In function `initialState':
+mainRunner.c:(.text+0x72): undefined reference to `firstBotton'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:15: buzzer.elf] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
