@@ -1,0 +1,91 @@
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> echo " > stateMachine.c
+
+bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/progrstudent@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > stateMachine.c
+toach: command not found
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach " > crazySound
+> 
+>   C-c C-c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach ""> crazySound
+toach: command not found
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  crazySound    mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  mainRunner.c  Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > crazySound.c
+toach: command not found
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > crazySound.c
+toach: command not found
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach '' > crazySound.c
+toach: command not found
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch "" > crazySound.c
+touch: cannot touch '': No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch '' > crazySound.c
+touch: cannot touch '': No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  crazySound    mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  crazySound.c  mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> rm crazySound
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  crazySound.c  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  mainRunner.c  Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  crazySound.c   mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  crazySound.c~  mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
+mainRunner.c:5:10: fatal error: led.h: No such file or directory
+ #include "led.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [<builtin>: mainRunner.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> sl
+If 'sl' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf sl
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch "" > led.h
+touch: cannot touch '': No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.c  Makefile        stateMachine.c~
+buzzer.elf  buzzer.o  crazySound.c    led.h          mainRunner.o  stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
+buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  led.h~        mainRunner.o  stateMachine.c
+buzzer.elf  buzzer.o  crazySound.c    led.h          mainRunner.c  Makefile      stateMachine.c~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 

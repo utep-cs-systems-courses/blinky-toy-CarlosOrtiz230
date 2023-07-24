@@ -1,3 +1,4 @@
+
 all: libTimer.a
 
 CPU             = msp430g2553
