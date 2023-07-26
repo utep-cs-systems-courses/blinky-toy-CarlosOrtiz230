@@ -1,8 +1,17 @@
 
+
+
+
+
+
+
+
+
 #include <msp430.h>
 #include "libTimer.h"
 #include "buzzer.h"
 #include "led.h"
+
 
 int main() {
   configureClocks(); //sstarts timing from msp

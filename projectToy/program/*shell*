@@ -1,177 +1,284 @@
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> echo " > stateMachine.c
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make laod
+make: *** No rule to make target 'laod'.  Stop.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.o stateMachine.o led.h ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
 
-bash: unexpected EOF while looking for matching `"'
-bash: syntax error: unexpected end of file
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/progrstudent@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > stateMachine.c
-toach: command not found
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c  buzzer.elf  buzzer.h  buzzer.o  mainRunner.c  mainRunner.o  Makefile  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach " > crazySound
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 1016 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.o stateMachine.o led.h ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 1016 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.o stateMachine.o led.h ../lib/libTimer.a
+msp430loader.sh  buzzer.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  buzzer.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f buzzer.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 1016 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> info: MSP430:  Flash/FRAM usage is 1016 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+If 'info:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf info:ma
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:17:15: error: expected ';' before '}' token
+     goto count
+               ^
+               ;
+crazySound.c:19:3:
+   } else if (secondCount == 50)
+   ~            
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:17:16: error: stray '#' in program
+     goto count;#include <msp430.h>
+                ^
+crazySound.c:17:17: error: 'include' undeclared (first use in this function)
+     goto count;#include <msp430.h>
+                 ^~~~~~~
+crazySound.c:17:17: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:17:26: error: 'msp430' undeclared (first use in this function)
+     goto count;#include <msp430.h>
+                          ^~~~~~
+crazySound.c:18:1: error: 'nclude' undeclared (first use in this function)
+ nclude "libTimer.h"
+ ^~~~~~
+crazySound.c:18:7: error: expected ';' before string constant
+ nclude "libTimer.h"
+       ^~~~~~~~~~~~~
+       ;
+crazySound.c:69:1: error: expected declaration or statement at end of input
+ }
+ ^
+crazySound.c:69:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program>     cnf info:ma
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+ info:ma: command not found                        
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> > > make load
+> 
 > 
 >   C-c C-c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  mainRunner.o  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach ""> crazySound
-toach: command not found
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  crazySound    mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  mainRunner.c  Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > crazySound.c
-toach: command not found
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach "" > crazySound.c
-toach: command not found
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> toach '' > crazySound.c
-toach: command not found
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch "" > crazySound.c
-touch: cannot touch '': No such file or directory
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch '' > crazySound.c
-touch: cannot touch '': No such file or directory
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  crazySound    mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  crazySound.c  mainRunner.o  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> rm crazySound
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  crazySound.c  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  mainRunner.c  Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  crazySound.c   mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  crazySound.c~  mainRunner.o  stateMachine.c
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
-mainRunner.c:5:10: fatal error: led.h: No such file or directory
- #include "led.h"
-          ^~~~~~~
-compilation terminated.
-make: *** [<builtin>: mainRunner.o] Error 1
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> sl
-If 'sl' is not a typo you can use command-not-found to lookup the package that contains it, like this:
-    cnf sl
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    mainRunner.c   Makefile      stateMachine.c~
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> touch "" > led.h
-touch: cannot touch '': No such file or directory
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  mainRunner.c  Makefile        stateMachine.c~
-buzzer.elf  buzzer.o  crazySound.c    led.h          mainRunner.o  stateMachine.c
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> ls
-buzzer.c    buzzer.h  #crazySound.c#  crazySound.c~  led.h~        mainRunner.o  stateMachine.c
-buzzer.elf  buzzer.o  crazySound.c    led.h          mainRunner.c  Makefile      stateMachine.c~
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
-mainRunner.c:6:10: fatal error: led-sound.h: No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:21:10: fatal error: led-sound.h: No such file or directory
  #include "led-sound.h"
           ^~~~~~~~~~~~~
 compilation terminated.
-make: *** [<builtin>: mainRunner.o] Error 1
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o buzzer.o buzzer.c
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o mainRunner.o mainRunner.c
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.c stateMachine.c led.h ../lib/libTimer.a
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
 crazySound.c: In function 'crazySound':
-crazySound.c:18:5: warning: implicit declaration of function 'delay_cycle' [-Wimplicit-function-declaration]
-     delay_cycle(1000000);
-     ^~~~~~~~~~~
-crazySound.c:19:1: error: expected declaration or statement at end of input
+crazySound.c:24:2: warning: implicit declaration of function 'siren' [-Wimplicit-function-declaration]
+  siren({
+  ^~~~~
+crazySound.c:24:8: error: expected expression before '{' token
+  siren({
+        ^
+crazySound.c:70:4: error: expected ';' before '}' token
+   }
+    ^
+    ;
+crazySound.c:72:1:
+ }
+ ~   
+crazySound.c:72:1: error: expected declaration or statement at end of input
  }
  ^
-stateMachine.c: In function 'toy_stateMachine':
-stateMachine.c:50:5: warning: implicit declaration of function 'siren' [-Wimplicit-function-declaration]
-     siren();
-     ^~~~~
-make: *** [Makefile:15: buzzer.elf] Error 1
+make: *** [<builtin>: crazySound.o] Error 1
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.c stateMachine.c led.h ../lib/libTimer.a
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
 crazySound.c: In function 'crazySound':
-crazySound.c:18:5: warning: implicit declaration of function 'delay_cycle' [-Wimplicit-function-declaration]
-     delay_cycle(1000000);
-     ^~~~~~~~~~~
-crazySound.c:19:1: error: expected declaration or statement at end of input
+crazySound.c:63:5: error: 't' undeclared (first use in this function)
+    }t = 0;make load
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program>     }t = 0;make load
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+If '}t' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf }t
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:63:5: error: 't' undeclared (first use in this function)
+    }t = 0;
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'crazySound.c:63:5:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf crazySound.c:63:5:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If 'crazySound.c:64:3:' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf crazySound.c:64:3:
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `else'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> If '^~~~' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf ^~~~
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: builtin: No such file or directory
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:63:5: error: 't' undeclared (first use in this function)
+    }t = 0;
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:63:5: error: 't' undeclared (first use in this function)
+    }t = 0;
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:63:5: error: 't' undeclared (first use in this function)
+    }t = 0;
+     ^
+crazySound.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:64:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:62:5: error: 't' undeclared (first use in this function)
+    }t = 0;
+     ^
+crazySound.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:63:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:64:4: error: 't' undeclared (first use in this function)
+    t = 0;
+    ^
+crazySound.c:64:4: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:65:3: error: expected '}' before 'else'
+   else {
+   ^~~~
+crazySound.c: In function 'crazySound':
+crazySound.c:65:3: error: expected '}' before 'else'
+make: *** [<builtin>: crazySound.o] Error 1
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o crazySound.o crazySound.c
+crazySound.c: In function 'crazySound':
+crazySound.c:17:16: error: stray '#' in program
+     goto count;#include <msp430.h>
+                ^
+crazySound.c:17:17: error: 'include' undeclared (first use in this function)
+     goto count;#include <msp430.h>
+                 ^~~~~~~
+crazySound.c:17:17: note: each undeclared identifier is reported only once for each function it appears in
+crazySound.c:17:26: error: 'msp430' undeclared (first use in this function)
+     goto count;#include <msp430.h>
+                          ^~~~~~
+crazySound.c:23:3: error: expected expression before 'void'
+   void crazySound(){
+   ^~~~
+crazySound.c:67:1: error: expected declaration or statement at end of input
  }
  ^
-make: *** [Makefile:15: buzzer.elf] Error 1
+crazySound.c:67:1: error: expected declaration or statement at end of input
+make: *** [<builtin>: crazySound.o] Error 1
 student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.c stateMachine.c led.h ../lib/libTimer.a
-crazySound.c: In function 'crazySound':
-crazySound.c:16:5: warning: implicit declaration of function 'delay_cycle' [-Wimplicit-function-declaration]
-     delay_cycle(1000000);
-     ^~~~~~~~~~~
-/tmp/ccsfBHfD.o: In function `.L3':
-crazySound.c:(.text+0x2c): undefined reference to `delay_cycle'
-/tmp/ccNxwLn4.o: In function `toy_stateMachine':
-stateMachine.c:(.text+0x18): undefined reference to `greenTimeAdvStateMachines'
-stateMachine.c:(.text+0x38): undefined reference to `redTimeAdvStateMachines'
-stateMachine.c:(.text+0x66): undefined reference to `song2'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile:15: buzzer.elf] Error 1
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.c stateMachine.c led.h ../lib/libTimer.a
-crazySound.c: In function 'crazySound':
-crazySound.c:16:5: warning: implicit declaration of function 'delay_cycle' [-Wimplicit-function-declaration]
-     delay_cycle(1000000);
-     ^~~~~~~~~~~
-/tmp/ccHTOSOz.o: In function `.L3':
-crazySound.c:(.text+0x2c): undefined reference to `delay_cycle'
-/tmp/ccgGHK7A.o: In function `toy_stateMachine':
-stateMachine.c:(.text+0x18): undefined reference to `greenTimeAdvStateMachines'
-stateMachine.c:(.text+0x38): undefined reference to `redTimeAdvStateMachines'
-stateMachine.c:(.text+0x66): undefined reference to `song2'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile:15: buzzer.elf] Error 1
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> make all
-msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o mainRunner.o crazySound.c stateMachine.c led.h ../lib/libTimer.a
-crazySound.c: In function 'crazySound':
-crazySound.c:16:5: warning: implicit declaration of function 'delay_cycle' [-Wimplicit-function-declaration]
-     delay_cycle(1000000);
-     ^~~~~~~~~~~
-/tmp/cchkYCTx.o: In function `.L3':
-crazySound.c:(.text+0x2c): undefined reference to `delay_cycle'
-/tmp/ccdwvWoD.o: In function `toy_stateMachine':
-stateMachine.c:(.text+0x18): undefined reference to `greenTimeAdvStateMachines'
-stateMachine.c:(.text+0x38): undefined reference to `redTimeAdvStateMachines'
-stateMachine.c:(.text+0x66): undefined reference to `song2'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile:15: buzzer.elf] Error 1
-student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program> 
+student@systems-vm:~/blinky-toy-CarlosOrtiz230/projectToy/program>
