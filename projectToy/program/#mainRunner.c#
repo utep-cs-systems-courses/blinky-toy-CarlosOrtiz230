@@ -38,6 +38,7 @@ int main() {
  /* The WDT will implement the toy's state machine in order to display the appropriate patterns at 
     the appropriate times for the appropriate amounts of time. */
  
+
 void stateMachine();
  
 void __interrupt_vec(PORT2_VECTOR) Port_2(){

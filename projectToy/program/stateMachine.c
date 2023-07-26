@@ -3,7 +3,7 @@
 #include "buzzer.h"
 #include "led.h"
 
-void toy_stateMachine(){
+void stateMachine(){
   char p1val = P1IN;            /* Detects input in the bottom board */
   char p2val = P2IN;/* Detects input in the top board */
   
