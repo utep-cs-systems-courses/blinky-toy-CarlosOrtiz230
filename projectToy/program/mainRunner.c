@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 #include <msp430.h>
 #include "libTimer.h"
 #include "buzzer.h"
@@ -35,9 +26,8 @@ int main() {
 }//main ends
   
 
- /* The WDT will implement the toy's state machine in order to display the appropriate patterns at 
-    the appropriate times for the appropriate amounts of time. */
- 
+//VECTORS THAT ALLOWS THE STATE MACHINE WDT
+
 void stateMachine();
  
 void __interrupt_vec(PORT2_VECTOR) Port_2(){
@@ -50,15 +40,13 @@ void __interrupt_vec(PORT2_VECTOR) Port_2(){
 /* Switch on P1 (S2) */
 
 void __interrupt_vec(PORT1_VECTOR) Port_1(){
-  if (P1IFG & SWITCHES) {      /* did a button cause this interrupt? */
-      P1IFG &= ~SWITCHES;      /* clear pending sw interrupts */
+  if (P1IFG & SWITCHES) {    
+      P1IFG &= ~SWITCHES;    
       stateMachine(); 
   }
 }
 
-/* The WDT will implement the toy's state machine in order to display the appropriate patterns at 
-   the appropriate times for the appropriate amounts of time. */
- 
+
 void __interrupt_vec(WDT_VECTOR) WDT() {
    stateMachine();
 }

@@ -11,11 +11,9 @@
 #define TOPS4 BIT3
 #define TOPSW (TOPS1 | TOPS2 | TOPS3 | TOPS4)
 
-void greenTimeAdvStateMachines();
-void redTimeAdvStateMachines();
-void toy_stateMachine();
+void stateMachine();
 void crazySound();
-void song();
-void song2();
+void melody(int counter);
+void weirdSound();
 
 #endif // included
