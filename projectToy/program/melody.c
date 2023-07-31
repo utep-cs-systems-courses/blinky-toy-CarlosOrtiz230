@@ -1,3 +1,4 @@
+
 #include <msp430.h>
 #include "libTimer.h"
 #include "buzzer.h"
@@ -12,14 +13,16 @@ void melody(int counter) {
   for (int i = 0; i < numNotes; i++) {
     //first note turn off red and on green
     P1OUT |= LED_GREEN;
+    __delay_cycles(10000);
     P1OUT &= ~LED_RED;
     buzzer_set_period(notes[i]);
     __delay_cycles(1000000);
     //little wait
 
     //the opposite lights
-    P1OUT |= LED_GREEN;
-    P1OUT &= ~LED_RED;
+    P1OUT |= LED_RED;
+    __delay_cycles(100000);
+    P1OUT &= ~LED_GREEN;
     buzzer_set_period(notes[i]); 
     __delay_cycles(7000000);
   }
